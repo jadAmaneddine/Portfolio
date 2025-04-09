@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jad Amaneddine | DevOps & Cloud Engineer</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --accent-color: #00bcd4;
+      --card-bg: #1e1e1e;
+    }
+
+    body.light {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --accent-color: #00bcd4;
+      --card-bg: #f0f0f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: var(--card-bg);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header h2 {
+      margin-top: 0.5rem;
+      font-weight: normal;
+      color: var(--accent-color);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      border-left: 4px solid var(--accent-color);
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .card p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--card-bg);
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent-color);
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleTheme()">Theme</button>
+  <header>
+    <h1>Jad Amaneddine</h1>
+    <h2>Junior DevOps & Cloud Engineer</h2>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h3>About Me</h3>
+      <div class="card">
+        <p>Dedicated Computer and Communication Engineer with expertise in DevOps, cloud computing, and IT infrastructure. Proficient in deploying, managing, and automating cloud-based solutions to enhance system reliability and operational efficiency.</p>
+        <p>Skilled in scripting, network security, and Infrastructure as Code (IaC), with hands-on experience in AWS, Azure, and DevOps tools such as Jenkins, Docker, and Kubernetes.</p>
+        <p>Passionate about optimizing workflows, streamlining deployments, and implementing scalable solutions to drive business success.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <!-- Project cards will be inserted here later -->
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="card">
+        <p>Email: <a href="mailto:jadamaneddin@icloud.com" style="color: var(--accent-color);">jadamaneddin@icloud.com</a></p>
+        <p>GitHub: <a href="https://github.com/jadamaneddine" target="_blank" style="color: var(--accent-color);">github.com/jadamaneddine</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Jad Amaneddine. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
